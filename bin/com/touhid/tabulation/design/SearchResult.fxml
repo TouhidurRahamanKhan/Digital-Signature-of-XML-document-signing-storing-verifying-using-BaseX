@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.touhid.tabulation.controller.SearchResultController">
+   <top>
+      <AnchorPane prefHeight="339.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="397.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jahangirnagar University" />
+            <Text layoutX="338.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Computer Science and Engineering Department" />
+            <GridPane layoutX="5.0" layoutY="126.0" prefHeight="185.0" prefWidth="659.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="322.0" minWidth="10.0" prefWidth="182.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="477.0" minWidth="10.0" prefWidth="477.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="8.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Serial No :">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Education Year :" GridPane.rowIndex="1" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Examinee Name :" GridPane.rowIndex="2" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Father Name" GridPane.rowIndex="3" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Class Roll :" GridPane.rowIndex="4" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Exam Roll :" GridPane.rowIndex="5" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hall Name :" GridPane.rowIndex="6" />
+                  <Label fx:id="lbSerialNo" prefHeight="16.0" prefWidth="439.0" text="6575" GridPane.columnIndex="1" />
+                  <Label fx:id="lbEducationYear" prefHeight="16.0" prefWidth="478.0" text="2017" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="lbExamineeName" prefHeight="16.0" prefWidth="468.0" text="Mr X" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label fx:id="lbFatherName" prefHeight="16.0" prefWidth="484.0" text="Mr Y" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label fx:id="lbClassRoll" prefHeight="16.0" prefWidth="461.0" text="67578" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label fx:id="lbExamRoll" prefHeight="16.0" prefWidth="468.0" text="36535" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label fx:id="lbHallName" prefHeight="16.0" prefWidth="469.0" text="98689898" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+               </children>
+            </GridPane>
+            <Button layoutX="5.0" layoutY="7.0" mnemonicParsing="false" onAction="#goHome" text="Go Home" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </AnchorPane>
+   </top>
+   
+   
+	
+   
+   <center>
+      <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+        <columns>
+           <TableColumn fx:id="courseNoColumn" text="Course No" />
+           <TableColumn fx:id="courseTitleColumn" text="Course Title" />
+            <TableColumn fx:id="totalCreditColumn" text="Total Credit" />
+            <TableColumn fx:id="totalTutorialMarkColumn" text="Tutorial Mark Total" />
+            <TableColumn fx:id="obtainedTutorialMarkColumn" text="Tutorial Mark Obtained" />
+            <TableColumn fx:id="totalFinalMarkColumn" text="Final Mark Total" />
+           <TableColumn fx:id="obtainedFinalMarkColumn" text="Final Mark Obtained" />
+            <TableColumn fx:id="totalObtainedMarkColumn" text="Total Mark Obtained" />
+            <TableColumn fx:id="gradeObtainedColumn" text="Grade Obtained" />
+            <TableColumn fx:id="gpObtainedColumn" text="GP Obtained" />
+        </columns>
+      </TableView>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="160.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="36.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tabulator 1 Signed Status" />
+            <Text layoutX="388.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tabulator 2 Signed Status" />
+            <Text layoutX="732.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ExamCommittee  Chairman" wrappingWidth="221.0703125" />
+            <Label fx:id="lbTabolatorOneSigned" layoutX="53.0" layoutY="106.0" prefHeight="16.0" prefWidth="135.0" text="INVALID SIGNED" />
+            <Label fx:id="lbTabolatorTwoSigned" layoutX="412.0" layoutY="101.0" prefHeight="16.0" prefWidth="120.0" text="INVALID SIGNED" />
+            <Label fx:id="lbChairmanSigned" layoutX="758.0" layoutY="106.0" prefHeight="16.0" prefWidth="121.0" text="INVALID SIGNED" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,55 @@
+
+<Jahangirnagar_university xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema/ju.xsd">
+    <Dept_of_computer_science_and_Engineering>
+        <serial_no>3</serial_no>
+        <Education_year>2017</Education_year>
+        <Name_of_the_examinee>Mr X</Name_of_the_examinee>
+        <Father_name>Mr y</Father_name>
+        <class_roll>25</class_roll>
+        <Exam_roll>4567</Exam_roll>
+        <Hall_name>MH</Hall_name>
+        <semester>
+            <courseDetail>
+                <courses>
+                    <course_no>345</course_no>
+                    <course_title>AI</course_title>
+                    <total_credit>4.0</total_credit>
+                    <tutorial_marks_total>4.0</tutorial_marks_total>
+                    <tutorial_marks_obtained>100.0</tutorial_marks_obtained>
+                    <Final_marks_total>100.0</Final_marks_total>
+                    <Final_marks_obtained>80.0</Final_marks_obtained>
+                    <total_marks_obtained>80.0</total_marks_obtained>
+                    <Grade_obtained>3.5</Grade_obtained>
+                    <GP_obtained>3.5</GP_obtained>
+                </courses>
+                <courses>
+                    <course_no>606</course_no>
+                    <course_title>DS</course_title>
+                    <total_credit>4.0</total_credit>
+                    <tutorial_marks_total>4.0</tutorial_marks_total>
+                    <tutorial_marks_obtained>100.0</tutorial_marks_obtained>
+                    <Final_marks_total>100.0</Final_marks_total>
+                    <Final_marks_obtained>70.0</Final_marks_obtained>
+                    <total_marks_obtained>70.0</total_marks_obtained>
+                    <Grade_obtained>3.7</Grade_obtained>
+                    <GP_obtained>3.7</GP_obtained>
+                </courses>
+                <courses>
+                    <course_no>780</course_no>
+                    <course_title>Algo</course_title>
+                    <total_credit>4.0</total_credit>
+                    <tutorial_marks_total>4.0</tutorial_marks_total>
+                    <tutorial_marks_obtained>100.0</tutorial_marks_obtained>
+                    <Final_marks_total>100.0</Final_marks_total>
+                    <Final_marks_obtained>50.0</Final_marks_obtained>
+                    <total_marks_obtained>50.0</total_marks_obtained>
+                    <Grade_obtained>3.6</Grade_obtained>
+                    <GP_obtained>3.6</GP_obtained>
+                </courses>
+            </courseDetail>
+            <GPA>3.4</GPA>
+            <previous_GPA>3.3</previous_GPA>
+            <CGPA>3.5</CGPA>
+        </semester>
+    </Dept_of_computer_science_and_Engineering>
+</Jahangirnagar_university>
