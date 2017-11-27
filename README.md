@@ -2,8 +2,8 @@
 A Desktop application that is used for creating a xml document from user input and then create a xml file and at last sign the document
 by three different key using sign server and store the document into BaseX.Actually it is a project for my department's result processing
 system.The aim is to store our result data in a basebase after signing and retrive from the database and verify the signature.We used
-three different key pair  one for our class teacher,one for our exam commitee chairman and other for exam control office.Note that all
-the sign is done by serial fashion such that exam commitee chairman can only sign if it is signed by class teacher and exam control office can only if it is signed by exam commitee chairman.
+three different key pair  one for our class teacher,one for our exam commitee chairman and other for exam control office.**Note that all
+the sign is done by serial fashion such that exam commitee chairman can only sign if it is signed by class teacher and exam control office can only if it is signed by exam commitee chairman.**
 
 # Tools
 * Sign Server (https://www.signserver.org/)
